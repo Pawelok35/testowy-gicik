@@ -3,25 +3,25 @@ body {
     margin: 0;
     background-color: rgb(125, 205, 234);
     display: flex;
-    justify-content: center; /* Centruje kontener poziomo */
-    align-items: center; /* Centruje kontener pionowo */
-    height: 100vh; /* Ustawia wysokość na pełne okno */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
   }
   
   .container {
     display: flex;
-    flex-direction: column; /* Ustawia elementy w kolumnie */
-    justify-content: center; /* Centruje zawartość w pionie */
-    align-items: center; /* Centruje zawartość w poziomie */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     background-color: rgb(147, 183, 241);
     padding: 20px;
-    max-width: 800px; /* Maksymalna szerokość kontenera */
-    border-radius: 10px; /* Zaokrąglenie rogów */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    max-width: 800px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .title {
-    grid-area: title;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,15 +32,16 @@ body {
   }
   
   .band {
-    grid-area: band;
+ 
     display: flex;
     justify-content: center;
     text-decoration: overline underline;
     font-style: italic;
+    font-size: 19px;
   }
   
   .text-song {
-    grid-area: text-song;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,21 +50,12 @@ body {
   }
   
   .authors {
-    grid-area: authors;
+ 
     display: flex;
     font-style: italic;
     justify-content: flex-end;
   }
   
-  .concert{
-    display: flex;
-    justify-content: center; /* Wyśrodkowanie obrazka */
-    align-items: center;
-    margin-bottom: 20px; /* Odstęp pod obrazkiem */
-    height: 150px; /* Ustawia wysokość obrazka */
-  width: auto; /* Ustawia szerokość na auto, aby zachować proporcje */
-  border-radius: 8px;
-  }
 
   img{
     height: 100px;
