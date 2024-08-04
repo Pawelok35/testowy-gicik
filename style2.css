@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.grid-container {
+  border: 2px solid red;
+  display: grid;
+  min-height: calc(100vh - 20px);
+  width: 100%;
+  grid-template-rows: 10vh 20vh 20vh 20vh 20vh 5vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'nav'
+    'header'
+    'content'
+    'photos'
+    'adress'
+    'footer';
+
+  row-gap: 5px;
+}
+
+.item {
+  margin: 5px;
+  border: 2px solid black;
+  display: flex;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(151, 230, 115);
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  grid-area: content;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 200px;
+}
+
+.photos {
+  grid-area: photos;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px;
+}
+
+.adress {
+  grid-area: adress;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(190, 77, 215);
+  align-items: center;
+  justify-content: center;
+}
+
+.pod-grid {
+  border: 1px solid #e10d0d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 'pod1 pod2 pod3 pod4';
+}
+
+.podprodukt {
+  display: flex;
+  flex-direction: column;
+}
+
+.pod1 {
+  grid-area: pod1;
+  align-items: center;
+  justify-content: start;
+}
+
+.brand {
+  border: 2px solid #550ff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: 10px 0;
+}
+
+.pod2 {
+  grid-area: pod2;
+  align-items: center;
+  justify-content: start;
+}
+
+.pod3 {
+  grid-area: pod3;
+  align-items: center;
+  justify-content: start;
+}
+
+.pod4 {
+  grid-area: pod4;
+  align-items: center;
+  justify-content: start;
+}
+
+.zdjecia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50%;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    'photo1 photo2'
+    'photo3 photo3';
+}
+
+.zdjecia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #550ff6;
+  margin: 10px 10px;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+
+.photo2 {
+  grid-area: photo2;
+}
+
+.photo3 {
+  grid-area: photo3;
+}

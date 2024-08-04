@@ -30,6 +30,7 @@
   display: flex;
  justify-content: center;
  text-decoration: overline underline;
+ font-style: italic;
 }
 
 .text-song {
@@ -38,6 +39,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 10px;
 }
 
 .authors {
