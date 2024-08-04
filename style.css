@@ -2,17 +2,22 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: rgb(125, 205, 234);
-    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centruje kontener poziomo */
+    align-items: center; /* Centruje kontener pionowo */
+    height: 100vh; /* Ustawia wysokość na pełne okno */
   }
   
   .container {
-    display: grid;
-    grid-template-areas:
-      'title'
-      'band'
-      'text-song'
-      'authors';
-      padding: 20px;  
+    display: flex;
+    flex-direction: column; /* Ustawia elementy w kolumnie */
+    justify-content: center; /* Centruje zawartość w pionie */
+    align-items: center; /* Centruje zawartość w poziomie */
+    background-color: rgb(147, 183, 241);
+    padding: 20px;
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
   }
   
   .title {
@@ -23,6 +28,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
   
   .band {
@@ -49,3 +55,17 @@ body {
     justify-content: flex-end;
   }
   
+  .concert{
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie obrazka */
+    align-items: center;
+    margin-bottom: 20px; /* Odstęp pod obrazkiem */
+    height: 150px; /* Ustawia wysokość obrazka */
+  width: auto; /* Ustawia szerokość na auto, aby zachować proporcje */
+  border-radius: 8px;
+  }
+
+  img{
+    height: 100px;
+    width: 100px;
+  }
